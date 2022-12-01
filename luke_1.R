@@ -32,7 +32,7 @@ max(y)
 # transpose data frame (columns to rows)
 y <- as.data.frame(t(y))
 
-# order by decending
+# order by descending
 z <- y[order(-y$V1),]
 
 # find sum of three first values
