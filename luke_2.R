@@ -9,7 +9,7 @@ library(tidyverse)
 ## OPPGAVE 1 ##
 
 # read in file, add empty column, set colnames
-cheat_sheet <-read.table("input_2.txt")
+cheat_sheet <- read.table("input_2.txt")
 cheat_sheet <- cheat_sheet %>% add_column(points = NA)
 colnames(cheat_sheet) <- c("play", "response", "points")
 
@@ -41,7 +41,7 @@ sum(cheat_sheet$points)
 ## OPPGAVE 2 ##
 
 # read in file, add empty column, set colnames
-cheat_sheet2 <-read.table("input_2.txt")
+cheat_sheet2 <- read.table("input_2.txt")
 cheat_sheet2 <- cheat_sheet2 %>% add_column(points = NA)
 colnames(cheat_sheet2) <- c("play", "response", "points")
 
