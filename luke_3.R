@@ -8,7 +8,7 @@ library(tidyverse)
 
 ## OPPGAVE 1 ##
 
-# read in file, add empty column
+# read in file, add empty columns
 item_list <- read.table("input_3.txt", col.names = "items")
 item_list <- item_list %>% add_column(items_1 = NA, items_2 = NA, sim_item = NA, number = NA)
 
