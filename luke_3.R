@@ -12,7 +12,6 @@ library(tidyverse)
 item_list <- read.table("input_3.txt", col.names = "items")
 item_list <- item_list %>% add_column(items_1 = NA, items_2 = NA, sim_item = NA, number = NA)
 
-
 # split items
 for (i in 1:300){
   item_list$items_1[i] <- str_sub(item_list$items[i], start = 1, end = nchar(item_list$items[i])/2)
