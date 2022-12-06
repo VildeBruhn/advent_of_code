@@ -14,11 +14,9 @@ buffer <- unlist(strsplit(buffer, ""))
 
 # find marker
 len <- length(buffer)
-counter <- 1
 string_list <- c()
 for (i in 1:len){
-  string_list[i] <- str_flatten(buffer[counter:(counter+3)])
-  counter <- counter + 1
+  string_list[i] <- str_flatten(buffer[i:(i+3)])
 }
 
 unique_list <- c()
@@ -28,17 +26,16 @@ for (i in 1:len){
 }
 
 marker <- min(which(unique_list == FALSE)) + 3
+marker
   #1766
 
 
 ## OPPGAVE 2 ##
 
 # find marker
-counter2 <- 1
 string_list2 <- c()
 for (i in 1:len){
-  string_list2[i] <- str_flatten(buffer[counter2:(counter2+13)])
-  counter2 <- counter2 + 1
+  string_list2[i] <- str_flatten(buffer[i:(i+13)])
 }
 
 unique_list2 <- c()
@@ -48,4 +45,5 @@ for (i in 1:len){
 }
 
 marker <- min(which(unique_list2 == FALSE)) + 13
+marker  
   #2383
